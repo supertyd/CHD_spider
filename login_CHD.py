@@ -4,8 +4,8 @@ import requests
 import time
 from bs4 import BeautifulSoup
 class loginschool:
-    username = input('请输入你的账户:')
-    password = input('请输入你的密码:')
+    username = input('account:')
+    password = input('password:')
     browser = webdriver.Chrome()
     browser.get('http://ids.chd.edu.cn/authserver/login?service=http%3A%2F%2Fportal.chd.edu.cn%2F')
     input_name = browser.find_element_by_name('username')
